@@ -124,10 +124,15 @@ const editTask = (index) => {
         ))}
       </ul>
       <h1 id="msg">
-    {completedTasks === totalTasks && totalTasks > 0 
-        ? "Tasks Completed 🎉" 
-        : "Complete the Task Soon"
-    }
+   <p>
+  {totalTasks === 0 
+      ? "" 
+      : completedTasks === totalTasks 
+          ? "Tasks Completed 🎉" 
+          : "Complete the Task Soon"
+  }
+</p>
+
 </h1>
 
     </div>
